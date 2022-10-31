@@ -35,7 +35,7 @@ function Home() {
     
     }
   const processdata=()=>{
-    Axios.post("http://localhost:3001/addprgrm",{prginp}).then((response)=>{
+    Axios.post("https://origintranscoder-app.onrender.com/addprgrm",{prginp}).then((response)=>{
       alert("submited");
     }).catch(err=>
     {

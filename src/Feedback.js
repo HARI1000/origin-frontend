@@ -15,11 +15,11 @@ function Feedback()
   const[clr1,setclr1]=useState('black');
   const[clr2,setclr2]=useState('black');
   useEffect(()=> {
-    Axios.get("http://localhost:3001/getfeedback").then((response)=> {setFeedback(response.data)})
+    Axios.get("https://origintranscoder-app.onrender.com/getfeedback").then((response)=> {setFeedback(response.data)})
   },[])
 
   const createFeedback= () =>
-  {Axios.post("http://localhost:3001/addfeedback",{name,email,review,}).then((response) =>{
+  {Axios.post("https://origintranscoder-app.onrender.com/addfeedback",{name,email,review,}).then((response) =>{
     alert("Feedback Submited");
   })
 }
