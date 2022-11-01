@@ -70,7 +70,7 @@ function Home() {
           <a className="nav-link" href="#inputbox">Use</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/feedback">Feedback</a>
+        <Link className='nav-link' to="/feedback"><p>Feedback</p></Link>
         </li>
       </ul>
     </div>
