@@ -127,20 +127,22 @@ function Home() {
     </button>
   </div>
 </div>
-<section className="inputbox" id="inputbox">
+<section  id="inputbox" className="convertorarea">
+
 <h4 className="heading"> <span>THE CONVERTOR</span></h4>
- <form>
+ <form className="inputbox">
   <div className="ipbox">
- <textarea style={{backgroundColor:bgclr}} onChange={pinpchng} placeholder="input your python code"  cols="50" rows="10" >
+ <textarea className='ibox' style={{backgroundColor:bgclr}} onChange={pinpchng} placeholder="input your python code"   >
     </textarea>
     </div>
    <div className="outbox">
- <textarea style={{backgroundColor:bgclr}} value={prgout} placeholder="the output" cols="50" rows="10">
+ <textarea  className='obox' style={{backgroundColor:bgclr}} value={prgout} placeholder="the output" >
    </textarea>
   </div>
   <button onClick={processinp} type="button"  className="btn btn-outline-success" id="key">Process</button>
   <button onClick={processdata} type="button"  className="btn btn-outline-success" id="key">Send</button>
     </form>
+  
   </section>
 <div className="feedbackdiv">
   <h5>Enter the feedback here</h5>

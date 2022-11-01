@@ -27,8 +27,7 @@ return(
 <div className="container">
   
     <h1>Feedback</h1>
-        <div className="theform">
-          <div className="form">
+        <div className='theform'>
             <form className="frm" action="index.html" method="post">
               <h5>Name</h5>
               <input onChange={(event)=>{setname(event.target.value)}} type="text" placeholder="Name" />
@@ -43,14 +42,13 @@ return(
               <div id ="smile" style={{color:clr2}} onClick={()=>{setclr2('blue')}} onMouseEnter={()=>{setclr2('green')}} onMouseLeave={()=>{setclr2('black')}}> <FontAwesomeIcon icon={faSmile}/></div>
             </div>
             <h5>Please leave your feedback below</h5>
-              <textarea onChange={(event)=>{setreview(event.target.value)}}id="fdbkinp"name="name" rows="8" cols="80"></textarea>
+              <textarea className='fdbckinpt' onChange={(event)=>{setreview(event.target.value)}}id="fdbkinp"name="name" ></textarea>
               <br/>
               <br/>
               <Link  to="/feedbackthx"><button onClick={createFeedback} type="button" className="btn btn-outline-success"><h5>Submit</h5></button></Link>
-        </form>
-        
+            </form>
         </div>
-        </div>
+        <div className='review'>
         <h1>Some reviews</h1>
         <div className="theformfb">
         {listofFeedback.map((rev)=> {
@@ -64,6 +62,7 @@ return(
   
         })
         }
+        </div>  
       </div>
    </div>);
 }

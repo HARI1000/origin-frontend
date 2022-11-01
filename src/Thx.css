@@ -1,8 +1,12 @@
 .thxcontent{
-  padding-top:100px;
+  padding:10vh 5vw;
   width:100vw;
   display: flex;
-    
-    justify-content: center;
-   
+  justify-content: center;
+  
+  }
+  .thx{
+    padding:5vh 3vw;
+    border-radius:10px;
+    border: 1px solid black;
   }
