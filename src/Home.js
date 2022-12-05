@@ -20,7 +20,7 @@ function Home() {
     
     console.log(printwords);
     console.log(prginp);
-    Axios.get("https://apiorigin.herokuapp.com/"+prginp)
+    Axios.get("https://originapi.onrender.com/"+prginp)
     .then((res)=>{
       console.log(res.data.data);
       console.log("**"+JSON.stringify(res.data.data));
